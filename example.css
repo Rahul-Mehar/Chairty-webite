@@ -1,0 +1,41 @@
+/* Style for the section */
+section {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Full-width container with two inner divs */
+.full-width-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribute the inner divs */
+    background-color: #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.inner-div1, .inner-div2 {
+    width: 48%; /* Each inner div takes up 48% of the width */
+    background-color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+/* Flex container for additional divs */
+.flex-container {
+    display: flex;
+    justify-content: space-around; /* Space around each flex item */
+    margin-top: 20px;
+}
+
+.flex-item {
+    background-color: #e0e0e0;
+    padding: 20px;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}

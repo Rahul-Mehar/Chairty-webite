@@ -1,0 +1,369 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header start */
+header{
+    background-color: rgb(152,218,232);
+    color: black;
+    padding: 1rem;
+
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container h1{
+    font-family: cursive;
+    color: red;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    border-radius: 600px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+header nav ul li a {
+    /* position: relative; */
+    color: black;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+/* Header end */
+
+
+/* Drop down start */
+
+/* Hide the dropdown intially */
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1000;
+    width: 150px; 
+    max-width: 300px; 
+    height: auto;
+    align-items: center; 
+   }
+
+/* show dropdown on hover */
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0;
+
+}
+/* Drop down end */
+
+
+
+/* Main section start */
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+    /* text-align: center; */
+    background-color: #f4f4f4;
+}
+
+section h1 {
+    margin-top: 0;
+    /* border: 2px solid red; */
+}
+
+/* section Home start */
+section#home{
+    background-color: rgb(108, 112, 114);
+    color: black;
+    display: flex;
+    padding: 1rem;    
+}
+
+.img{
+    width: 50%;
+    /* border: 2px solid yellow; */
+}
+
+.content{
+    /* border: 2px solid brown; */
+    width: 50%;
+}
+
+
+.content h1{
+    color: rgb(154,217,231);
+    /* font-size: larger; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.content p{
+    color: #fff;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* section Home end */
+
+
+
+/* section about start */
+
+
+section#about{
+    /* border: 2px solid red; */
+    display: flex;
+    height: auto;
+    margin: 10px;
+    gap: 20px;
+}
+
+
+
+.info{
+    width: 50%;
+    /* border: 2px solid black; */
+    
+}
+
+.info img{
+    width: 100%;
+}
+
+.info p{
+    padding: 4px;  
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* section about end */
+
+
+
+
+/* section project start */
+
+
+.full-width-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribute the inner divs */
+    background-color: rgb(105, 180, 242);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.full-width-container h1 {
+    margin-top: 50px;
+    color: rgb(207, 224, 238);
+}
+
+.full-width-container p{
+    color: #fff;
+    font-size: large;
+
+}
+
+.inner-div1, .inner-div2 {
+    /* border: blue; */
+    width: 48%; /* Each inner div takes up 48% of the width */
+    /* background-color: #fff; */
+    padding: 10px;
+    box-sizing: border-box;
+    /* border: 1px solid #ddd; */
+    text-align: center;
+}
+
+/* Flex container for additional divs */
+.flex-container {
+    /* border: pink; */
+    display: flex;
+    justify-content: space-around; /* Space around each flex item */
+    margin-top: 20px;
+}
+
+.flex-item {
+    border: black;
+    /* background-color: #e0e0e0; */
+    padding: 20px;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+    /* border: 1px solid #ddd; */
+    box-sizing: border-box;
+}
+
+
+.flex-item h1{
+    margin: 20px;
+    text-align: left;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.flex-item p{
+    color: black;
+    text-align: start;
+}
+
+
+.project-img{
+    /* border: 2px solid rebeccapurple; */
+    width: 50%;
+}
+
+/* section project end */
+
+
+
+
+/* section Donate start */
+
+
+
+/* section Donate end */
+
+/* section contact us start */
+
+#contact{
+    border: 1 px solid green;
+    display: flex;
+    background-color: rgb(240, 217, 209);
+    text-align: center;
+}
+
+.address{
+    /* border: 1px solid red; */
+    width: 70%;
+    height: auto;
+}
+
+.address h1{
+    text-align: center;
+    font-style: italic;
+    font-size: x-large;
+} 
+
+
+
+
+
+.box {
+    text-align: center;
+    width: 400px;
+    margin: 0 auto; 
+    padding: 20px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.form-group label {
+    width: 100px; 
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Style the submit button */
+.form-group input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: auto;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: red;
+}
+/* section contact us end */
+
+
+
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2fc340;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
